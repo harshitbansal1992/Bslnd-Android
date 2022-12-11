@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivityDetails">
+
+    <EditText
+        android:id="@+id/nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Nationality"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/gotra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gotra"
+        app:layout_constraintTop_toBottomOf="@+id/pob" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gotra"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/gotra"
+        app:layout_constraintTop_toBottomOf="@+id/gotra"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <EditText
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Profession"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/qualification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/qualification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Qualification"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profession" />
+
+    <EditText
+        android:id="@+id/pathYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Path Year"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/knownLanguage"
+        app:layout_constraintEnd_toEndOf="@+id/qualification"
+        app:layout_constraintStart_toStartOf="@+id/qualification"
+        app:layout_constraintTop_toBottomOf="@+id/qualification" />
+
+    <EditText
+        android:id="@+id/knownLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Known Languages"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/pathYear"
+        app:layout_constraintStart_toStartOf="@+id/pathYear"
+        app:layout_constraintTop_toBottomOf="@+id/pathYear" />
+
+    <EditText
+        android:id="@+id/pob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Place of Birth"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tob"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tob"
+        app:layout_constraintTop_toBottomOf="@+id/tob" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Birth Date - dd/mm/yyyy"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/knownLanguage"
+        app:layout_constraintStart_toStartOf="@+id/knownLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/knownLanguage" />
+
+    <EditText
+        android:id="@+id/tob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Time of Birth"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/dob"
+        app:layout_constraintStart_toStartOf="@+id/dob"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+    <EditText
+        android:id="@+id/gotra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Gotra"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/pob"
+        app:layout_constraintStart_toStartOf="@+id/pob"
+        app:layout_constraintTop_toBottomOf="@+id/pob" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
